@@ -1,0 +1,35 @@
+.welcome_message_area {
+
+	margin-left: 10%;
+
+	width: 80%;
+	height: 300px;
+
+	text-align: center;
+
+	background-color: #ffffff;
+	border-radius: 25px;
+}
+
+.welcome_message {
+	font-size: 300%;
+	text-align: center;
+
+	padding-top: 10%;
+}
+
+.information_message {
+	font-size: 200%;
+	text-align: center;
+
+	padding-top: 5%;
+}
+
+.welcome_message_start_order_button {
+	width: 70%;
+	height: 30px;
+
+	margin-bottom: 10px;
+
+	font-size: 100%;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Page Title</title>
+	<link rel="stylesheet" href="../css/browsing.css">
+	<link rel="stylesheet" href="../css/header.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="meta_start">
+			<div class="logo_area">
+				<img src="../images/bbbslogo.png" class="logo_img" alt="Bun Bun Bake Shop Logo" height="150px" width="200px"></button>
+			</div>
+
+			<a href="#" onclick="location.href='../html/cart.html'" >
+			<div class="checkout_area">
+				<div class="quantity_in_cart">0</div>
+
+				<!-- <a href="#" onclick="location.href='cart.html'" > -->
+					<img src="../images/cart.png" alt="Cart" height="75px" width="100px"></button>
+				<!-- </a> -->
+
+				<div class="cost_in_cart">Total Cost: $0.00</div>
+			</div>
+
+			</a>
+		</div>
+		<script src="../javascript/header.js"></script>
+
+		<div class="nav_bar_area">
+			<table class="nav_bar_table">
+				<tr>
+					<td class="nav_bar_column">
+						<button onclick="location.href='../home.html'" type="button" class="nav_bar_button">Home</button>
+					</td>
+					<td class="nav_bar_column">
+						<button onclick="location.href='../html/browsing.html'" type="button" class="nav_bar_button" style="background-color:#c4b7a6">Order</button>
+					</td>
+					<td class="nav_bar_column">
+						<button onclick="location.href='../html/contact.html'" type="button" class="nav_bar_button">Contact</button>
+					</td>
+					<td class="nav_bar_column">
+						<button onclick="location.href='../html/aboutus.html'" type="button" class="nav_bar_button">About Us</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="item_browsing_area">
+			<table class="item_browsing_table">
+				<tr>
+					<td class="item_browsing">
+						<div>
+							<img src="../images/cinnamonrolloutline.png" alt="Cinnamon Roll" class="item_browsing_img">
+							<h3>Original - $2.00</h3>					
+							<p>Allergens: Dairy, Gluten</p>
+							<!-- <button onclick="location.href='detail.html'" type="button" class="item_browsing_button">Select Qty</button> -->
+							<button onclick='handleClick("Original")' type="button" class="item_browsing_button">Select Qty</button>
+						</div>
+					</td>
+					<td class="item_browsing">
+						<div>
+							<img src="../images/cinnamonrolloutline.png" alt="Blackberry Cinnamon Roll" class="item_browsing_img">
+							<h3>Blackberry - $2.00</h3>				
+							<p>Allergens: Dairy, Gluten</p>
+							<button onclick='handleClick("Blackberry")' type="button" class="item_browsing_button">Select Qty</button>
+						</div>
+					</td>
+					<td class="item_browsing">
+						<div>
+							<img src="../images/cinnamonrolloutline.png" alt="Walnut Cinnamon Roll" class="item_browsing_img">
+							<h3>Walnut - $2.00</h3>				
+							<p>Allergens: Dairy, Gluten</p>
+							<button onclick='handleClick("Walnut")' type="button" class="item_browsing_button">Select Qty</button>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="item_browsing">
+						<div>
+							<img src="../images/cinnamonrolloutline.png" alt="Original (Gluten Free) Cinnamon Roll" class="item_browsing_img">
+							<h3>Original (Gluten Free) - $2.00</h3>				
+							<p>Allergens: Dairy</p>
+							<button onclick='handleClick("Original (GF)")' type="button" class="item_browsing_button">Select Qty</button>
+						</div>
+					</td>
+					<td class="item_browsing">
+						<div>
+							<img src="../images/cinnamonrolloutline.png" alt="Pumpkin Spice Cinnamon Roll" class="item_browsing_img">
+							<h3>Pumpkin Spice - $2.00</h3>					
+							<p>Allergens: Dairy, Gluten</p>
+							<button onclick='handleClick("Pumpkin Spice")' type="button" class="item_browsing_button">Select Qty</button>
+						</div>
+					</td>
+					<td class="item_browsing">
+						<div>
+							<img src="../images/cinnamonrolloutline.png" alt="Caramel Pecan Cinnamon Roll" class="item_browsing_img">
+							<h3>Caramel Pecan - $2.00</h3>					
+							<p>Allergens: Dairy, Gluten</p>
+							<button onclick='handleClick("Caramel Pecan")' type="button" class="item_browsing_button">Select Qty</button>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+	<script src="../javascript/browsing.js"></script>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Page Title</title>
+	<link rel="stylesheet" href="../css/browsing.css">
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/detail.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="meta_start">
+			<div class="logo_area">
+				<img src="../images/bbbslogo.png" class="logo_img" alt="Bun Bun Bake Shop Logo" height="150px" width="200px"></button>
+			</div>
+
+			<a href="#" onclick="location.href='../html/cart.html'" >
+			<div class="checkout_area">
+				<div class="quantity_in_cart">0</div>
+
+				<!-- <a href="#" onclick="location.href='cart.html'" > -->
+					<img src="../images/cart.png" alt="Cart" height="75px" width="100px"></button>
+				<!-- </a> -->
+
+				<div class="cost_in_cart">Total Cost: $0.00</div>
+			</div>
+
+			</a>
+		</div>
+		<script src="../javascript/header.js"></script>
+
+		<div class="nav_bar_area">
+			<table class="nav_bar_table">
+				<tr>
+					<td class="nav_bar_column">
+						<button onclick="location.href='../home.html'" type="button" class="nav_bar_button">Home</button>
+					</td>
+					<td class="nav_bar_column">
+						<button onclick="location.href='../html/browsing.html'" type="button" class="nav_bar_button">Order</button>
+					</td>
+					<td class="nav_bar_column">
+						<button onclick="location.href='../html/contact.html'" type="button" class="nav_bar_button">Contact</button>
+					</td>
+					<td class="nav_bar_column">
+						<button onclick="location.href='../html/aboutus.html'" type="button" class="nav_bar_button">About Us</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+
+<!-- 		<div class="popup" onclick="myFunction()">Click me!
+  			<span class="popuptext" id="myPopup">Popup text...</span>
+		</div> -->
+
+		<div class="product_detail_area">
+			<table class="product_detail_table">
+				<tr>
+					<td rowspan="3" colspan="1" width="40%">
+						<div class="item_detail_area">
+							<img src="../images/cinnamonrolloutline.png" alt="Cinnamon Roll" class="item_detail_img">
+							<h3 id="cinnamon_roll_flavor_heading">Original - $2.00</h3>
+						</div>
+					</td>
+					<td>
+						<div class="item_detail_qty_radio_area">
+
+							<form id="qty_radio_form">
+							<h3>Select Quantity: </h3>
+							<div id="qty_error_message_area"></div>
+
+							<input type="radio" id="qty_1" name="qty" value="1">
+							<label for="qty_1">1</label>
+
+							<input type="radio" id="qty_3" name="qty" value="3">
+							<label for="qty_3">3</label>
+
+							<input type="radio" id="qty_6" name="qty" value="6">
+							<label for="qty_6">6</label>
+
+							<input type="radio" id="qty_12" name="qty" value="12">
+							<label for="qty_12">12</label>
+							</form>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="item_detail_glazing_radio_area">
+
+							<h3>Select Glazing:</h3>
+							<div id="glazing_error_message_area"></div>
+
+							<form id="glazing_radio_form">
+								<div class="radio_selection">
+									<input type="radio" id="glazing_none" name="glazing" value="None">
+									<label for="glazing_none">None</label>
+								</div>
+
+								<div class="radio_selection">
+									<input type="radio" id="glazing_sm" name="glazing" value="Sugar Milk">
+									<label for="glazing_sm">Sugar Milk</label>
+								</div>
+
+								<div class="radio_selection">
+									<input type="radio" id="glazing_vm" name="glazing" value="Vanilla Milk">
+									<label for="glazing_vm">Vanilla Milk</label>
+								</div>
+
+								<div class="radio_selection">
+									<input type="radio" id="glazing_dc" name="glazing" value="Double Chocolate">
+									<label for="glazing_dc">Double Chocolate</label>
+								</div>
+							</form>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button onclick="#" type="button" id="add_to_cart_button" class="add_to_cart_button popup" >Add to Cart 
+							<i id="total_cost_in_box">($0.00)</i> <span class="popuptext" id="myPopup">Successfully Added to Cart.</span>
+						</button>
+						<button onclick="location.href='../html/browsing.html'" type="button" class="add_to_cart_button">Go Back</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+	</body>
+	<script src="../javascript/addtocart.js"></script>
+	<script src="../javascript/detail.js"></script>
+</html>

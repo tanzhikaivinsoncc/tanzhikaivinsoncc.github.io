@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Page Title</title>
+	<link rel="stylesheet" href="browsing.css">
+	<link rel="stylesheet" href="detail.css">
+	</head>
+	<body>
+		<div class="meta_start">
+			<div class="logo_area">
+				<h1>Bun Bun <br >Bake <br> Shop</h1>
+			</div>
+			<div class="checkout_area">
+				<h1>Checkout </h1>
+				<h5>Current Total: $10.00</h5>
+			</div>
+		</div>
+
+		<div class="nav_bar_area">
+			<table class="nav_bar_table">
+				<tr>
+					<td class="nav_bar_column">
+						<button onclick="location.href='home.html'" type="button" class="nav_bar_button">Home</button>
+					</td>
+					<td class="nav_bar_column">
+						<button onclick="location.href='browsing.html'" type="button" class="nav_bar_button">Order</button>
+					</td>
+					<td class="nav_bar_column">
+						<button onclick="location.href='contact.html'" type="button" class="nav_bar_button">Contact</button>
+					</td>
+					<td class="nav_bar_column">
+						<button onclick="location.href='aboutus.html'" type="button" class="nav_bar_button">About Us</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="product_detail_area">
+			<table class="product_detail_table">
+				<tr>
+					<td rowspan="3" colspan="1" width="40%">
+						<div class="item_detail_area">
+							<img src="images/cinnamonroll.jpeg" alt="Cinnamon Roll" class="item_detail_img">
+							<h3>Original - $2.00</h3>
+						</div>
+					</td>
+					<td>
+						<div class="item_detail_qty_radio_area">
+
+							<h3>Select Quantity:</h3>
+
+							<input type="radio" id="qty_1" name="qty" value="1">
+							<label for="qty_1">1</label>
+
+							<input type="radio" id="qty_3" name="qty" value="3">
+							<label for="qty_3">3</label>
+
+							<input type="radio" id="qty_6" name="qty" value="6">
+							<label for="qty_6">6</label>
+
+							<input type="radio" id="qty_12" name="qty" value="12">
+							<label for="qty_12">12</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="item_detail_glazing_radio_area">
+
+							<h3>Select Glazing:</h3>
+
+							<div class="radio_selection">
+								<input type="radio" id="glazing_none" name="glazing" value="none">
+								<label for="glazing_none">None</label>
+							</div>
+
+							<div class="radio_selection">
+								<input type="radio" id="glazing_sm" name="glazing" value="sm">
+								<label for="glazing_sm">Sugar Milk</label>
+							</div>
+
+							<div class="radio_selection">
+								<input type="radio" id="glazing_vm" name="glazing" value="vm">
+								<label for="glazing_vm">Vanilla Milk</label>
+							</div>
+
+							<div class="radio_selection">
+								<input type="radio" id="glazing_dc" name="glazing" value="dc">
+								<label for="glazing_dc">Double Chocolate</label>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button onclick="#" type="button" class="add_to_cart_button">Add to Cart ($xx.xx)</button>
+						<button onclick="location.href='browsing.html'" type="button" class="add_to_cart_button">Go Back</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+	</body>
+</html>

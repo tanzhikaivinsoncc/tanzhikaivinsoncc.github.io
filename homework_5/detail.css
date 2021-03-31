@@ -1,0 +1,55 @@
+.product_detail_area {
+
+	margin-left: 10%;
+	height: 400px;
+	width: 80%;
+
+	background-color: #ffffff;
+	border-radius: 25px;
+}
+
+.product_detail_table {
+
+	height: 100%;
+	width: 100%;
+}
+
+.item_detail_img {
+	margin-left: 10%
+	height: 25%;
+  	width: 80%;
+  	text-align: center;
+
+}
+
+.item_detail_area {
+	margin-left: 10%
+	width: 40%;
+  	text-align: center;
+}
+
+.item_detail_qty_radio_area {
+	width: 100%;
+	text-align: left;
+}
+
+.item_detail_glazing_radio_area {
+	width: 100%;
+	text-align: left;
+}
+
+.add_to_cart_button {
+	width: 70%;
+	height: 30px;
+
+	margin-bottom: 10px;
+}
+
+.label {
+	margin-right: 10px;
+}
+
+.radio_selection {
+  margin-left: 3px;
+}
+}

@@ -1,0 +1,109 @@
+.product_detail_area {
+
+	margin-left: 10%;
+	height: 400px;
+	width: 80%;
+
+	background-color: #ffffff;
+	border-radius: 25px;
+}
+
+.product_detail_table {
+
+	height: 100%;
+	width: 100%;
+}
+
+.item_detail_img {
+	margin-left: 10%
+	height: 25%;
+  	width: 80%;
+  	text-align: center;
+  	border: 5px solid black;
+  	border-radius: 25px;
+
+}
+
+.item_detail_area {
+	margin-left: 10%
+	width: 40%;
+  	text-align: center;
+}
+
+.item_detail_qty_radio_area {
+	width: 100%;
+	text-align: left;
+}
+
+.item_detail_glazing_radio_area {
+	width: 100%;
+	text-align: left;
+}
+
+.add_to_cart_button {
+	width: 70%;
+	height: 30px;
+
+	margin-bottom: 10px;
+}
+
+.label {
+	margin-right: 10px;
+}
+
+.radio_selection {
+  margin-left: 3px;
+}
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
