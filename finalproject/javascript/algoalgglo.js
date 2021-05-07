@@ -91,11 +91,12 @@ function produceData(dataset_index) {
 
 function generateAllocatedData() {
     generateData(global_dataset_index)
-  }
+}
 
 function generateData(dataset_index) {
-    
-    var navbarCollapse = $(".collapse");               
+
+    converged = false
+    var navbarCollapse = $(".collapse");
     navbarCollapse.collapse("hide");
 
     layout_data.title = 'Hierarchical Agglomerative Clustering (Epoch 0)'
@@ -144,9 +145,9 @@ function generateData(dataset_index) {
 }
 
 function displayConvergenceInformation() {
-    $("#converged_notification").text("Converged! View Results in Step 4.")
+    $("#converged_notification").text("Converged! View Results in Step 3.")
     $("#epochs_md").text("Epochs to Convergence: " + currentIteration);
-  }
+}
 
 function nextIteration() {
 
@@ -157,9 +158,9 @@ function nextIteration() {
     offset = datasize / 2;
 
     if (currentIteration % 2 == 0) {
-        color_data[currentIteration/2] = 'red'
+        color_data[currentIteration / 2] = 'red'
     } else {
-        color_data[offset + Math.floor(currentIteration/2)] = 'blue'
+        color_data[offset + Math.floor(currentIteration / 2)] = 'blue'
     }
 
     currentIteration += 1
@@ -173,11 +174,27 @@ function nextIteration() {
     Plotly.redraw('kmeansPlotDiv');
 }
 
-function skipToConvergence() {
-
+function skippy() {
     while (currentIteration < datasize) {
         nextIteration()
     }
+}
+
+function skipToConvergence() {
+
+    if (converged) {
+        $("#converged_notification").text("Converged! View Results in Step 3.")
+    }
+
+    skippy()
+}
+
+function nextTenIteration() {
+
+    for (i = 0; i < 10; i++) {
+        nextIteration();
+    }
+
 }
 
 generateData(0)

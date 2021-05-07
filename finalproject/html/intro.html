@@ -1,93 +1,76 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html >
+<html lang="en">
 
 <head>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <!-- Latest compiled and minified CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <link rel="stylesheet" href="../css/intro.css">
-  <style>
-    .modebar {
-      display: none !important;
-    }
-  </style>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="../css/intro.css">
+    <style>
+        .modebar {
+            display: none !important;
+        }
+    </style>
 
 
-  <title>Page Title</title>
+    <title>Page Title</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="intro.html">Clustering Algorithms</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="intro.html">Clustering Algorithms</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="algokmeans.html">Choose Algorithms<span class="sr-only">(current)</span></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="d-flex justify-content-center">
-    <ol class="technical-text-list list-group w-75">
-      <li class="list-group-item">
-        <h4>Introduction</h4><br>
-        <p>Clustering is a Machine Learning technique that involves the grouping of
-          data points. Given a set of data points, we can use a clustering algorithm
-          to classify each data point into a specific group. In theory, data points that
-          are in the same group should have similar properties and/or features, while data
-          points in different groups should have highly dissimilar properties and/or
-          features. Clustering is a method of unsupervised learning and is a common
-          technique for statistical data analysis used in many fields.</p>
-      </li>
-      <li class="list-group-item">
-        <h4>Clustering Algorithm 1: K-Means Clustering</h4><br>
-        <p>To process the learning data, the K-means algorithm in data mining
-          starts with a first group of randomly selected centroids, which are used as the
-          beginning points for every cluster, and then performs iterative (repetitive)
-          calculations to optimize the positions of the centroids.
-        </p>
-        <p>
-          It halts creating and optimizing clusters when either:
-          The centroids have stabilized — there is no change in their values
-          because the clustering has been successful.
-          The defined number of iterations has been achieved.
-        </p>
-        <div class="d-flex justify-content-center">
-          <button type="button" class="btn btn-secondary" onclick="location.href='algokmeans.html'">Explore and Learn</button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="algokmeans.html">Choose Algorithms<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
         </div>
-      </li>
-      <li class="list-group-item">
-        <h4>Clustering Algorithm 2: Hierarchical Agglomerative Clustering</h4><br>
-        <p>The agglomerative clustering is the most common type of hierarchical
-          clustering used to group objects in clusters based on their similarity.
-          It’s also known as AGNES (Agglomerative Nesting). The algorithm starts by
-          treating each object as a singleton cluster. Next, pairs of clusters are
-          successively merged until all clusters have been merged into one big cluster
-          containing all objects.</p>
-          <div class="d-flex justify-content-center">
-            <button type="button" class="btn btn-secondary" onclick="location.href='algoalgglo.html'">Explore and Learn</button>
-          </div>
-      </li>
-    </ol>
-  </div>
+    </nav>
+
+    <div class="d-flex justify-content-center">
+        <ol class="technical-text-list list-group w-75">
+            <li class="list-group-item">
+                <h4>Introduction</h4><br>
+                <p>Clustering is a Machine Learning technique that involves the grouping of data points. Given a set of data points, we can use a clustering algorithm to classify each data point into a specific group. In theory, data points that are in the
+                    same group should have similar properties and/or features, while data points in different groups should have highly dissimilar properties and/or features. Clustering is a method of unsupervised learning and is a common technique for
+                    statistical data analysis used in many fields.</p>
+            </li>
+            <li class="list-group-item">
+                <h4>Clustering Algorithm 1: K-Means Clustering</h4><br>
+                <p>To process the learning data, the K-means algorithm in data mining starts with a first group of randomly selected centroids, which are used as the beginning points for every cluster, and then performs iterative (repetitive) calculations
+                    to optimize the positions of the centroids.
+                </p>
+                <p>
+                    It halts creating and optimizing clusters when either: The centroids have stabilized — there is no change in their values because the clustering has been successful. The defined number of iterations has been achieved.
+                </p>
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-secondary" onclick="location.href='algokmeans.html'">Explore and
+            Learn</button>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <h4>Clustering Algorithm 2: Hierarchical Agglomerative Clustering</h4><br>
+                <p>The agglomerative clustering is the most common type of hierarchical clustering used to group objects in clusters based on their similarity. It’s also known as AGNES (Agglomerative Nesting). The algorithm starts by treating each object
+                    as a singleton cluster. Next, pairs of clusters are successively merged until all clusters have been merged into one big cluster containing all objects.</p>
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-secondary" onclick="location.href='algoalgglo.html'">Explore and
+            Learn</button>
+                </div>
+            </li>
+        </ol>
+    </div>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
 </html>

@@ -1,157 +1,147 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html >
+<html lang="en">
 
 <head>
-  <!-- Latest compiled and minified CSS -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <!-- Latest compiled and minified CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <link rel="stylesheet" href="../css/algokmeans.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="../css/algokmeans.css">
 
-  <style>
-    .modebar {
-      display: none !important;
-    }
-  </style>
+    <style>
+        .modebar {
+            display: none !important;
+        }
+    </style>
 
 
-  <title>Page Title</title>
+    <title>Page Title</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="intro.html">Clustering Algorithms</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="intro.html">Clustering Algorithms</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#"><u>Choose Algorithms</u><span class="sr-only">(current)</span></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><u>Choose Algorithms</u><span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-  <!-- Level 2 -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#"><u>K-means Clustering</u><span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="algoalgglo.html">Agglomerative Hierarchical Clustering</a>
-      </li>
-    </ul>
-  </nav>
+    <!-- Level 2 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><u>K-means Clustering</u><span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="algoalgglo.html">Agglomerative Hierarchical Clustering</a>
+            </li>
+        </ul>
+    </nav>
 
-  <!-- Level 3 -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="nav-link" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false"
-      aria-controls="collapseExample">
+    <!-- Level 3 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="nav-link" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
       Change Dataset
     </a>
-  </nav>
+    </nav>
 
 
-  <div class="collapse" id="collapseExample">
+    <div class="collapse" id="collapseExample">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img class="card-img-top" src="../images/clusterRandom.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Random</h5>
+                        <p class="card-text">Random Datapoints that form different shapes.</p>
+                        <button type="button" class="btn btn-secondary" onclick="generateData(0)">Use Random Dataset</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img class="card-img-top" src="../images/cluster0.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Dataset 1</h5>
+                        <p class="card-text">Datapoints that form a large and small circle.</p>
+                        <button type="button" class="btn btn-secondary" onclick="generateData(1)">Use Dataset 1</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img class="card-img-top" src="../images/cluster1.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Dataset 2</h5>
+                        <p class="card-text">Datapoints that form two rectangles.</p>
+                        <button type="button" class="btn btn-secondary" onclick="generateData(2)">Use Dataset 2</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="row">
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card">
-          <img class="card-img-top" src="../images/clusterRandom.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Random</h5>
-            <p class="card-text">Random Datapoints that form different shapes.</p>
-            <button type="button" class="btn btn-secondary" onclick="generateData(0)">Use Random Dataset</button>
-          </div>
+        <div class="col-lg-6 col-sm-12">
+            <div id='kmeansPlotDiv'></div>
         </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card">
-          <img class="card-img-top" src="../images/cluster0.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Dataset 1</h5>
-            <p class="card-text">Datapoints that form a large and small circle.</p>
-            <button type="button" class="btn btn-secondary" onclick="generateData(1)">Use Dataset 1</button>
-          </div>
-        </div>
-      </div>
+        <div class="col-lg-6 col-sm-12">
 
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card">
-          <img class="card-img-top" src="../images/cluster1.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Dataset 2</h5>
-            <p class="card-text">Datapoints that form two rectangles.</p>
-            <button type="button" class="btn btn-secondary" onclick="generateData(2)">Use Dataset 2</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-lg-6 col-sm-12">
-      <div id='kmeansPlotDiv'></div>
-    </div>
-    <div class="col-lg-6 col-sm-12">
-
-      <ol class="list-group">
-        <li class="list-group-item">
-          <h5>Dataset Information</h5>
-          <ul>
-            <li>
-              Dataset Size: 200
-            </li>
-          </ul>
-        </li>
-        <li class="list-group-item">
-          <h5>Step 1: Generate Dataset</h5>
-          <button type="button" class="btn btn-primary" onclick="generateAllocatedData()">Data Generation /
+            <ol class="list-group">
+                <li class="list-group-item">
+                    <h5>Dataset Information</h5>
+                    <ul>
+                        <li>
+                            Dataset Size: 200
+                        </li>
+                    </ul>
+                </li>
+                <li class="list-group-item">
+                    <h5>Step 1: Generate Dataset</h5>
+                    <button type="button" class="btn btn-primary" onclick="generateAllocatedData()">Data Generation /
             Restart</button>
-        </li>
-        <li class="list-group-item">
-          <h5>Step 2: Generate 2 Centroids</h5>
-          <p id="centroid_error" class="text-danger"></p>
-          <button type="button" class="btn btn-primary" onclick="generateCentroid()">Centroid Generation</button>
-        </li>
-        <li class="list-group-item">
-          <h5>Step 3: Start K-means Clustering</h5>
-          <p>Keep pressing "Next Epoch" till Convergence</p>
-          <p id="converged_notification" class="text-success"></p>
-          <p id="next_iter_error" class="text-danger"></p>
-          <button type="button" class="btn btn-primary" onclick="nextIteration()">Next Epoch</button>
-        </li>
-        <li class="list-group-item">
-          <h5>Step 4: Results</h5><br>
-          <ul class="list-group">
-            <li class="list-group-item" id="centroid_1_md">Centroid 1 Coordinates: ( , )</li>
-            <li class="list-group-item" id="centroid_2_md">Centroid 2 Coordinates: ( , )</li>
-            <li class="list-group-item" id="epochs_md">Epochs to Convergence: ? </li>
-          </ul>
-        </li>
-      </ol>
+                </li>
+                <li class="list-group-item">
+                    <h5>Step 2: Generate 2 Centroids</h5>
+                    <p id="centroid_error" class="text-danger"></p>
+                    <button type="button" class="btn btn-primary" onclick="generateCentroid()">Centroid Generation</button>
+                </li>
+                <li class="list-group-item">
+                    <h5>Step 3: Start K-means Clustering</h5>
+                    <p>Keep pressing "Next Epoch" till Convergence</p>
+                    <p id="converged_notification" class="text-success"></p>
+                    <p id="next_iter_error" class="text-danger"></p>
+                    <button type="button" class="btn btn-primary" onclick="nextIteration()">Next Epoch</button>
+                </li>
+                <li class="list-group-item">
+                    <h5>Step 4: Results</h5><br>
+                    <ul class="list-group">
+                        <li class="list-group-item" id="centroid_1_md">Centroid 1 Coordinates: ( , )</li>
+                        <li class="list-group-item" id="centroid_2_md">Centroid 2 Coordinates: ( , )</li>
+                        <li class="list-group-item" id="epochs_md">Epochs to Convergence: ? </li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
     </div>
 
-  </div>
-
-
+    <script src="../javascript/algokmeans.js"></script>
 
 </body>
-
-<script src="../javascript/algokmeans.js"></script>
 
 </html>
