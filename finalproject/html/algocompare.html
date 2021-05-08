@@ -1,0 +1,79 @@
+<!DOCTYPE html >
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <link rel="stylesheet" href="../css/algocompare.css">
+
+    <style>
+        .modebar {
+            display: none !important;
+        }
+    </style>
+    <title>A tale of two clustering Algorithms</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="intro.html">Clustering Algorithms</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="algokmeans.html">Choose Algorithms</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><u>Compare Algorithms</u><span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="d-flex justify-content-center">
+        <ol class="technical-text-list list-group w-75">
+            <li class="list-group-item">
+                <h4>Compare Algorithms</h4><br>
+                <p>Different clustering algorithms differ in their final cluster decisions. Below, run K-means and Hierarchical Clustering individually and observe the <b>intermediate differences as you step through the iterations</b> and <b>the number of iterations required for convergence</b>.
+                    Finally, at convergence, are there any <b>differences in how the points are clustered</b>?</p>
+            </li>
+        </ol>
+    </div>
+    <div class="row col-lg-12">
+        <div class="col-lg-6">
+            <div class="card text-center">
+                <div class="text-center" id='kmeansPlotDiv'></div>
+                <div class="card-body">
+                    <p id="converged_notification" class="text-success"></p>
+                    <p class="card-text" id="epochs_md">Epochs to Convergence: ?</p>
+                    <button type="button" class="btn btn-primary " onclick="nextIterationKmeans() ">Next Epoch</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="card text-center">
+                <div id='alggloPlotDiv'></div>
+                <div class="card-body">
+                    <p id="converged_notification_agg" class="text-success"></p>
+                    <p class="card-text" id="epochs_md_agg">Epochs to Convergence: ?</p>
+                    <button type="button" class="btn btn-primary " onclick="nextTenIterationAgglo() ">Next 10 Epochs</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <script src="../javascript/algocompareagglo.js "></script>
+    <script src="../javascript/algocomparekmeans.js "></script>
+</body>
+
+</html>
